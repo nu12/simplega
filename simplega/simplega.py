@@ -181,7 +181,7 @@ class GAHelper():
 	def get_column(cls, chromosome, column, num_col): 
 		"""Return the genes of a given column, considering the matrix from the chromosome`s dna."""
 		if column >= num_col: raise ValueError("Chromosome doesn`t have this much columns.")
-		return "".join([ l[i] for i in range(0 , num_col , num_col) for l in GAHelper.chunckdna(chromosome, num_col) ])
+		return "".join([ l[i] for i in range(column , num_col , num_col) for l in GAHelper.chunckdna(chromosome, num_col) ])
 
 	@classmethod
 	def get_row(cls, chromosome, row, num_col): 
