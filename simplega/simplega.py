@@ -258,16 +258,3 @@ class GA():
 
 				population = Population(new_generation)
 
-def fit(ch):
-	f = 0
-	a = "ALYSSON"
-	for i in range(len(ch.dna)):
-		if ch.dna[i] == a[i]: f += 2
-	return f
-
-if __name__ == "__main__":
-    
-	ga = GA(fit, chromosome_size = 7, mutation_rate = 0.02)
-	ga.run(True)
-	print(ga.get_fittest())
-
