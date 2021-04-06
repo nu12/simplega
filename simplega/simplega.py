@@ -256,5 +256,4 @@ class GA():
 					if not p1 in new_generation: new_generation.append(p1)
 					if not p2 in new_generation: new_generation.append(p2)
 
-				population = Population(new_generation)
-
+			population = Population(new_generation)
