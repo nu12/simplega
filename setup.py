@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="simplega",
-    version="1.0.1",
+    version="1.0.2",
     author="Alysson A Costa",
     author_email="alysson.avila.costa@gmail.com",
     description="A simple implementation of Genetic Algorithm",
