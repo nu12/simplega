@@ -16,7 +16,7 @@ from simplega import Chromosome, Population, GA, GAHelper
 from simplega import *
 ```
 
-Create a fitness function that suits toyr problem
+Create a fitness function that suits your problem
 ```python
 def maximize(chromosome):
     return sum( [ ord(gene) for gene in chromosome.dna ] )
